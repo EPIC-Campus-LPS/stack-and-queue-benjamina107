@@ -45,15 +45,19 @@ public class Stack {
     }
 
     public int peek() {
-        return 0
+        return s[l-1];
     }
 
     public int size() {
-
+        return l;
     }
 
     public boolean isEmpty() {
-
+        if (l == 0;) {
+            return true;
+        } else {
+            return false;
+        }
     }
   
     public static void main(String[] args) {
