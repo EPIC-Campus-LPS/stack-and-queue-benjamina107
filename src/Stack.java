@@ -1,10 +1,12 @@
-
+import java.util.EmptyStackException;
 
 public class Stack {
 
     private int[] s;
 
     int l = 0;
+
+    public Stack() {}
     
     public void push(int element) {
         int[] tmp = new int[l+1]
@@ -38,13 +40,17 @@ public class Stack {
             l--;
             return item;
         } else {
-            System.out.println("Empty Stack");
+            throw new EmptyStackException();
+
             return -1;
         }
         
     }
 
     public int peek() {
+        if (size <= 0) {
+            throw new EmptyStackException();
+        }
         return s[l-1];
     }
 
