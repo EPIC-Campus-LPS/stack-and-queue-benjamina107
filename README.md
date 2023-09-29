@@ -34,10 +34,13 @@ Implement a stack and queue class using an array of integer values.
 ## Reflection Questions
 
 - What is the fundamental principle behind a stack?
+- A stack is something that takes input from top to bottom and outputs from bottom to top
 - In what situations would using a stack be beneficial?
+- A stack would work well if you are making a 'feed' or similar system where you want to see the newest items first
 - What is the fundamental principle behind a queue?
+- Something takes input from top to bottom and outputs from top to bottom
 - In what situations would using a queue be beneficial?
-
+  Something like a list of orders on a cooking game for example or some sort of processing system for separate items
 ## Rubric
 
 - 4 points – All requested items are present. Functional and efficient Stack and Queue class. Javadoc reference for both
