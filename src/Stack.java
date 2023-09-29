@@ -11,7 +11,7 @@ public class Stack {
     public void push(int element) {
         int[] tmp = new int[l+1]
         if(l > 0) {
-    
+    //adds to top of stack with new array and increases size by 1
             for(int i = 0; i < l; i++) {
                 tmp[i] = s[i];
             }
@@ -31,7 +31,7 @@ public class Stack {
         if(l != 0 ) {
             int item = s[l-1];
             int[] tmp = new int[l-1]
-
+            //cuts array by 1 into new array and returns extra value
             for(int i = 0; i < l-1; i++) {
                 tmp[i] = s[i];
             }
